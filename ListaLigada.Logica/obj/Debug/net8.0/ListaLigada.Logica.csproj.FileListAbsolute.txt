@@ -1,0 +1,12 @@
+C:\Users\ASUS\Documents\Proyectos\Estructura\GitEDAT\EDAT_ListaLigada\ListaLigada.Logica\bin\Debug\net8.0\ListaLigada.Logica.deps.json
+C:\Users\ASUS\Documents\Proyectos\Estructura\GitEDAT\EDAT_ListaLigada\ListaLigada.Logica\bin\Debug\net8.0\ListaLigada.Logica.dll
+C:\Users\ASUS\Documents\Proyectos\Estructura\GitEDAT\EDAT_ListaLigada\ListaLigada.Logica\bin\Debug\net8.0\ListaLigada.Logica.pdb
+C:\Users\ASUS\Documents\Proyectos\Estructura\GitEDAT\EDAT_ListaLigada\ListaLigada.Logica\obj\Debug\net8.0\ListaLigada.Logica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Documents\Proyectos\Estructura\GitEDAT\EDAT_ListaLigada\ListaLigada.Logica\obj\Debug\net8.0\ListaLigada.Logica.AssemblyInfoInputs.cache
+C:\Users\ASUS\Documents\Proyectos\Estructura\GitEDAT\EDAT_ListaLigada\ListaLigada.Logica\obj\Debug\net8.0\ListaLigada.Logica.AssemblyInfo.cs
+C:\Users\ASUS\Documents\Proyectos\Estructura\GitEDAT\EDAT_ListaLigada\ListaLigada.Logica\obj\Debug\net8.0\ListaLigada.Logica.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Documents\Proyectos\Estructura\GitEDAT\EDAT_ListaLigada\ListaLigada.Logica\obj\Debug\net8.0\ListaLigada.Logica.sourcelink.json
+C:\Users\ASUS\Documents\Proyectos\Estructura\GitEDAT\EDAT_ListaLigada\ListaLigada.Logica\obj\Debug\net8.0\ListaLigada.Logica.dll
+C:\Users\ASUS\Documents\Proyectos\Estructura\GitEDAT\EDAT_ListaLigada\ListaLigada.Logica\obj\Debug\net8.0\refint\ListaLigada.Logica.dll
+C:\Users\ASUS\Documents\Proyectos\Estructura\GitEDAT\EDAT_ListaLigada\ListaLigada.Logica\obj\Debug\net8.0\ListaLigada.Logica.pdb
+C:\Users\ASUS\Documents\Proyectos\Estructura\GitEDAT\EDAT_ListaLigada\ListaLigada.Logica\obj\Debug\net8.0\ref\ListaLigada.Logica.dll

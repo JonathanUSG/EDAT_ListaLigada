@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ListaLigada.UI.Consola/1.0.0": {
+        "dependencies": {
+          "ListaLigada.Logica": "1.0.0"
+        },
+        "runtime": {
+          "ListaLigada.UI.Consola.dll": {}
+        }
+      },
+      "ListaLigada.Logica/1.0.0": {
+        "runtime": {
+          "ListaLigada.Logica.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ListaLigada.UI.Consola/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ListaLigada.Logica/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
