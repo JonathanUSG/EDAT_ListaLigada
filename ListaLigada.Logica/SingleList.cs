@@ -38,6 +38,7 @@
             while (pointer != null)
             {
                 cadenaLista += $"{pointer.Data} \n";
+                pointer= pointer.Next;
             }
             return cadenaLista.ToString();
         }

@@ -8,7 +8,7 @@ internal class Program
         var singleList =new SingleList<string>();
         singleList.Add("Juan");
         singleList.Add("José");
-        singleList.Add("Jan");
+        singleList.Add("Alberto");
 
         Console.WriteLine(singleList);
     }
