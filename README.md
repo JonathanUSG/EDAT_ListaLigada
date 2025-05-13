@@ -1,54 +1,65 @@
-# Tema 2: Métodos de Solución de Ecuaciones
+# 📂 Métodos de Interpolación
 
-Este tema abarca diferentes métodos numéricos para encontrar raíces de funciones no lineales. La raíz de una función $f(x)$ es el valor de $x$ que hace que $f(x) = 0$. Los métodos se dividen en dos grandes categorías: **métodos cerrados** y **métodos abiertos**.
-
----
-
-## Contenido
-
-- 📁 `Metodos_Cerrados/`: Métodos que requieren un intervalo con un cambio de signo ($f(a) \cdot f(b) < 0$).
-  - Método de Bisección
-  - Método de la Regla Falsa
-
-- 📁 `Metodos_Abiertos/`: Métodos que no necesitan un intervalo inicial, solo uno o dos valores de inicio.
-  - Método del Punto Fijo
-  - Método de Newton-Raphson
-  - Método de la Secante
+Esta carpeta contiene **información teórica** y **código en Java** para los métodos de interpolación:  
+**Interpolación Lineal** e **Interpolación Polinómica**.  
+Estos métodos permiten estimar valores de una función en puntos intermedios a partir de **datos discretos**.
 
 ---
 
-## Comparación General
+## 📘 Información Teórica
 
-| Característica         | Métodos Cerrados               | Métodos Abiertos                      |
-|------------------------|--------------------------------|----------------------------------------|
-| Requieren intervalo    | Sí ($f(a) \cdot f(b) < 0$)     | No, solo valores iniciales            |
-| Convergencia           | Lenta pero garantizada         | Rápida, pero no siempre garantizada   |
-| Implementación         | Sencilla                       | Puede requerir derivadas              |
-| Ejemplos               | Bisección, Regla Falsa         | Punto Fijo, Newton-Raphson, Secante   |
+### 🔹 Interpolación Lineal
 
----
+La interpolación lineal conecta dos puntos consecutivos $(x_i, y_i)$ y $(x_{i+1}, y_{i+1})$ con una **recta**.  
+La fórmula para estimar $f(x)$ en un punto $x$ entre $x_i$ y $x_{i+1}$ es:
 
-## Objetivo del Tema
+\[
+f(x) = y_i + \frac{(y_{i+1} - y_i)(x - x_i)}{x_{i+1} - x_i}
+\]
 
-El objetivo de este tema es que el estudiante:
-- Comprenda la diferencia entre métodos cerrados y abiertos.
-- Aplique cada método correctamente según el tipo de función y condiciones iniciales.
-- Evalúe ventajas y desventajas de cada técnica.
-- Analice la **convergencia** y **eficiencia** de cada método.
+**✅ Ventajas:**
+- Simple
+- Rápida
+- Adecuada para datos con comportamiento lineal
 
----
-
-## Recomendaciones
-
-- Graficar la función antes de aplicar cualquier método.
-- Verificar que se cumplan las condiciones de uso de cada método.
-- Comparar el número de iteraciones requeridas por cada técnica.
+**⚠️ Limitaciones:**
+- No captura curvaturas
+- No representa comportamientos complejos
 
 ---
 
-## Notación
+### 🔹 Interpolación Polinómica
 
-- $x_r$: Aproximación de la raíz.
-- $f(x)$: Función evaluada.
-- $x_n$: Iteración actual.
-- $x_{n+1}$: Siguiente iteración.
+Construye un **polinomio de grado $n$** que pasa por $n+1$ puntos.  
+Métodos comunes incluyen el **polinomio de Lagrange** y el de **Newton**.  
+La forma general es:
+
+\[
+P(x) = a_0 + a_1 x + a_2 x^2 + \dots + a_n x^n
+\]
+
+**✅ Ventajas:**
+- Precisa para datos con patrones no lineales
+
+**⚠️ Limitaciones:**
+- Polinomios de alto grado pueden generar oscilaciones (**fenómeno de Runge**)
+
+---
+
+## 📁 Contenido de la Carpeta
+
+Esta carpeta incluye:
+
+- ✅ **Código en Java** para implementar la **Interpolación Lineal**
+- ✅ **Código en Java** para implementar la **Interpolación Polinómica** (usando **Lagrange** o **Newton**)
+- 📎 Archivos con **ejemplos prácticos** y **comentarios** para facilitar su comprensión
+
+---
+
+## 🧠 Recomendaciones
+
+- Verifique que los puntos de datos sean **suficientes** para el grado del polinomio
+- **Visualice los resultados** para detectar oscilaciones en la interpolación polinómica
+- Use:
+  - ✅ **Interpolación Lineal** para datos simples  
+  - ✅ **Interpolación Polinómica** para datos más complejos
