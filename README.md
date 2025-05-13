@@ -1,66 +1,75 @@
-# 📂 Métodos de Interpolación
+# 📊 Análisis de Datos
 
-Esta carpeta contiene **información teórica** y **código en Java** para los métodos de interpolación:  
-**Interpolación Lineal** e **Interpolación Polinómica**.  
-Estos métodos permiten estimar valores de una función en puntos intermedios a partir de **datos discretos**.
+Esta carpeta contiene información teórica y código en Java para los métodos de análisis de datos: **Correlación**, **Regresión** y **Mínimos Cuadrados**. Estos métodos se utilizan para modelar relaciones y tendencias en conjuntos de datos.
 
 ---
 
-## 📘 Información Teórica
+## 📚 Información Teórica
 
-### 🔹 Interpolación Lineal
+### 🔗 Correlación
 
-La interpolación lineal conecta dos puntos consecutivos $(x_i, y_i)$ y $(x_{i+1}, y_{i+1})$ con una **recta**.  
-La fórmula para estimar $f(x)$ en un punto $x$ entre $x_i$ y $x_{i+1}$ es:
+La correlación mide la relación lineal entre dos variables. El **coeficiente de correlación de Pearson** $r$ se calcula como:
 
 $$
-P(x) = a_0 + a_1 x + a_2 x^2 + \dots + a_n x^n
+r = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sqrt{\sum (x_i - \bar{x})^2 \sum (y_i - \bar{y})^2}}
 $$
 
+✅ **Ventajas**:
+- Indica la fuerza y dirección de la relación.
 
-**✅ Ventajas:**
-- Simple
-- Rápida
-- Adecuada para datos con comportamiento lineal
-
-**⚠️ Limitaciones:**
-- No captura curvaturas
-- No representa comportamientos complejos
+⚠️ **Limitaciones**:
+- Solo mide relaciones lineales.
 
 ---
 
-### 🔹 Interpolación Polinómica
+### 📈 Regresión
 
-Construye un **polinomio de grado $n$** que pasa por $n+1$ puntos.  
-Métodos comunes incluyen el **polinomio de Lagrange** y el de **Newton**.  
-La forma general es:
+La regresión ajusta una función (lineal o no lineal) para modelar la relación entre variables. Para **regresión lineal simple**, la ecuación es:
 
 $$
-P(x) = a_0 + a_1 x + a_2 x^2 + \dots + a_n x^n
+y = a + bx
 $$
 
-**✅ Ventajas:**
-- Precisa para datos con patrones no lineales
+Donde $a$ es la **intersección** y $b$ es la **pendiente**.
 
-**⚠️ Limitaciones:**
-- Polinomios de alto grado pueden generar oscilaciones (**fenómeno de Runge**)
+✅ **Ventajas**:
+- Predice valores basándose en tendencias.
+
+⚠️ **Limitaciones**:
+- Sensible a valores atípicos.
 
 ---
 
-## 📁 Contenido de la Carpeta
+### ➕ Mínimos Cuadrados
+
+El método de mínimos cuadrados ajusta una función **minimizando la suma de los cuadrados de los errores**:
+
+$$
+S = \sum (y_i - f(x_i))^2
+$$
+
+✅ **Ventajas**:
+- Proporciona el mejor ajuste para datos ruidosos.
+
+⚠️ **Limitaciones**:
+- Puede ser computacionalmente costoso para modelos complejos.
+
+---
+
+## 📂 Contenido de la Carpeta
 
 Esta carpeta incluye:
 
-- ✅ **Código en Java** para implementar la **Interpolación Lineal**.
-- ✅ **Código en Java** para implementar la **Interpolación Polinómica** (usando **Lagrange**).
-- 📎 Archivos con **ejemplos prácticos** y **comentarios** para facilitar su comprensión
+- 📄 Código en Java para calcular el **coeficiente de correlación**.
+- 📄 Código en Java para implementar **regresión** (lineal y/o no lineal).
+- 📄 Código en Java para el método de **mínimos cuadrados**.
+
+Todos los archivos contienen ejemplos prácticos y comentarios para facilitar su comprensión.
 
 ---
 
-## 🧠 Recomendaciones
+## 📝 Recomendaciones
 
-- Verifique que los puntos de datos sean **suficientes** para el grado del polinomio
-- **Visualice los resultados** para detectar oscilaciones en la interpolación polinómica
-- Use:
-  - ✅ **Interpolación Lineal** para datos simples  
-  - ✅ **Interpolación Polinómica** para datos más complejos
+- 📊 Verifique la distribución de los datos antes de aplicar regresión.
+- 📌 Use correlación para decidir si la regresión lineal es adecuada.
+- ✅ Valide los modelos comparando los resultados con datos reales.
