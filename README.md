@@ -35,9 +35,9 @@ Construye un **polinomio de grado $n$** que pasa por $n+1$ puntos.
 Métodos comunes incluyen el **polinomio de Lagrange** y el de **Newton**.  
 La forma general es:
 
-\[
+$$
 P(x) = a_0 + a_1 x + a_2 x^2 + \dots + a_n x^n
-\]
+$$
 
 **✅ Ventajas:**
 - Precisa para datos con patrones no lineales
