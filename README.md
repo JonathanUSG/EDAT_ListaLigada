@@ -1,16 +1,20 @@
 # Tema 5: Interpolación
 
-Este repositorio contiene implementaciones en Java y fundamentos teóricos sobre técnicas de interpolación y análisis de datos aplicados. Se encuentra dividido en dos partes principales:
+Este módulo contiene conceptos, teoría y ejemplos prácticos relacionados con la interpolación y el análisis de datos, fundamentales en el análisis numérico.
 
-## 📁 Estructura del repositorio
+## Definición de los métodos implementados
 
-- `MetodosInterpolacion/`: Contiene los métodos clásicos de interpolación, como:
-  - **Interpolación Lineal**: Estima valores intermedios entre dos puntos conocidos mediante una recta.
-  - **Interpolación Polinómica**: Usa polinomios de mayor grado para ajustar un conjunto de puntos conocidos.
+### 1. Interpolación Lineal
+Método de estimación que aproxima valores desconocidos dentro del rango de datos conocidos utilizando segmentos de rectas entre pares de puntos adyacentes.
 
-- `AnalisisDatos/`: Incluye herramientas estadísticas utilizadas para ajustar modelos a datos reales:
-  - **Correlación**: Mide la relación lineal entre dos variables.
-  - **Regresión Lineal**: Encuentra una recta que mejor se ajusta a un conjunto de datos.
-  - **Mínimos Cuadrados**: Técnica que minimiza el error cuadrático entre los datos y el modelo ajustado.
+### 2. Interpolación Polinómica
+Método que construye un único polinomio de grado \( n \) que pasa por \( n+1 \) puntos conocidos. Es útil cuando se busca mayor precisión que la interpolación lineal.
 
-Cada carpeta contiene el código Java correspondiente a cada método, junto con su descripción teórica.
+### 3. Correlación
+Mide el grado de relación lineal entre dos variables. Se representa por el coeficiente de correlación \( r \), con valores entre -1 y 1.
+
+### 4. Regresión
+Busca encontrar una función (normalmente lineal) que modele la relación entre variables, permitiendo realizar predicciones. No obliga a que el modelo pase por todos los puntos.
+
+### 5. Mínimos Cuadrados
+Técnica utilizada para encontrar la mejor aproximación lineal (o polinómica) a un conjunto de datos, minimizando la suma de los cuadrados de las diferencias entre los valores observados y los estimados.
