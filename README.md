@@ -51,8 +51,8 @@ $$
 
 Esta carpeta incluye:
 
-- ✅ **Código en Java** para implementar la **Interpolación Lineal**
-- ✅ **Código en Java** para implementar la **Interpolación Polinómica** (usando **Lagrange** o **Newton**)
+- ✅ **Código en Java** para implementar la **Interpolación Lineal**.
+- ✅ **Código en Java** para implementar la **Interpolación Polinómica** (usando **Lagrange**).
 - 📎 Archivos con **ejemplos prácticos** y **comentarios** para facilitar su comprensión
 
 ---
