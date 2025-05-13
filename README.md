@@ -13,9 +13,10 @@ Estos métodos permiten estimar valores de una función en puntos intermedios a 
 La interpolación lineal conecta dos puntos consecutivos $(x_i, y_i)$ y $(x_{i+1}, y_{i+1})$ con una **recta**.  
 La fórmula para estimar $f(x)$ en un punto $x$ entre $x_i$ y $x_{i+1}$ es:
 
-\[
-f(x) = y_i + \frac{(y_{i+1} - y_i)(x - x_i)}{x_{i+1} - x_i}
-\]
+$$
+P(x) = a_0 + a_1 x + a_2 x^2 + \dots + a_n x^n
+$$
+
 
 **✅ Ventajas:**
 - Simple
